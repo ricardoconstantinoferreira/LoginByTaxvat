@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Test\Unit\Plugin\Magento\Customer\Controller\Ajax;
+namespace RCFerreira\LoginByTaxvat\Test\Unit\Plugin\Magento\Customer\Controller\Ajax;
 
-use Ferreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Ajax\LoginPlugin;
+use RCFerreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Ajax\LoginPlugin;
 use Magento\Customer\Controller\Ajax\Login;
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 
@@ -21,12 +21,12 @@ class LoginPluginTest extends \PHPUnit\Framework\TestCase
     protected $jsonMock;
 
     /**
-     * @var \Ferreira\LoginByTaxvat\Model\Helper\ValidatorEmail|(\Ferreira\LoginByTaxvat\Model\Helper\ValidatorEmail&object&\PHPUnit\Framework\MockObject\MockObject)|(\Ferreira\LoginByTaxvat\Model\Helper\ValidatorEmail&\PHPUnit\Framework\MockObject\MockObject)|(object&\PHPUnit\Framework\MockObject\MockObject)|\PHPUnit\Framework\MockObject\MockObject
+     * @var \RCFerreira\LoginByTaxvat\Model\Helper\ValidatorEmail|(\RCFerreira\LoginByTaxvat\Model\Helper\ValidatorEmail&object&\PHPUnit\Framework\MockObject\MockObject)|(\RCFerreira\LoginByTaxvat\Model\Helper\ValidatorEmail&\PHPUnit\Framework\MockObject\MockObject)|(object&\PHPUnit\Framework\MockObject\MockObject)|\PHPUnit\Framework\MockObject\MockObject
      */
     protected $validatorEmailMock;
 
     /**
-     * @var \Ferreira\LoginByTaxvat\Model\Data\Customer|(\Ferreira\LoginByTaxvat\Model\Data\Customer&object&\PHPUnit\Framework\MockObject\MockObject)|(\Ferreira\LoginByTaxvat\Model\Data\Customer&\PHPUnit\Framework\MockObject\MockObject)|(object&\PHPUnit\Framework\MockObject\MockObject)|\PHPUnit\Framework\MockObject\MockObject
+     * @var \RCFerreira\LoginByTaxvat\Model\Data\Customer|(\RCFerreira\LoginByTaxvat\Model\Data\Customer&object&\PHPUnit\Framework\MockObject\MockObject)|(\RCFerreira\LoginByTaxvat\Model\Data\Customer&\PHPUnit\Framework\MockObject\MockObject)|(object&\PHPUnit\Framework\MockObject\MockObject)|\PHPUnit\Framework\MockObject\MockObject
      */
     protected $customerMock;
 
@@ -61,10 +61,10 @@ class LoginPluginTest extends \PHPUnit\Framework\TestCase
         $this->requestMock = $this->getMockBuilder(\Magento\Framework\App\Request\Http::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $this->validatorEmailMock = $this->getMockBuilder(\Ferreira\LoginByTaxvat\Model\Helper\ValidatorEmail::class)
+        $this->validatorEmailMock = $this->getMockBuilder(\RCFerreira\LoginByTaxvat\Model\Helper\ValidatorEmail::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $this->customerMock = $this->getMockBuilder(\Ferreira\LoginByTaxvat\Model\Data\Customer::class)
+        $this->customerMock = $this->getMockBuilder(\RCFerreira\LoginByTaxvat\Model\Data\Customer::class)
             ->disableOriginalConstructor()
             ->getMock();
         $this->loginMock = $this->getMockBuilder(Login::class)

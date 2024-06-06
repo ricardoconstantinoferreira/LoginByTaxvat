@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Account;
+namespace RCFerreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Account;
 
 use Magento\Customer\Controller\Account\LoginPost;
-use Ferreira\LoginByTaxvat\Model\Data\Customer;
+use RCFerreira\LoginByTaxvat\Model\Data\Customer;
 
 class LoginPostPlugin
 {

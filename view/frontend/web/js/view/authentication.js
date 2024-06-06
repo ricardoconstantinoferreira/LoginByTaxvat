@@ -24,7 +24,7 @@ define([
         forgotPasswordUrl: checkoutConfig.forgotPasswordUrl,
         autocomplete: checkoutConfig.autocomplete,
         defaults: {
-            template: 'Ferreira_LoginByTaxvat/authentication'
+            template: 'RCFerreira_LoginByTaxvat/authentication'
         },
 
         /**

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Model\Helper;
+namespace RCFerreira\LoginByTaxvat\Model\Helper;
 
 class ValidatorEmail
 {

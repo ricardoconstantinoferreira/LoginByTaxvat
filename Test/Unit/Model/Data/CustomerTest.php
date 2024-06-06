@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Test\Unit\Model\Data;
+namespace RCFerreira\LoginByTaxvat\Test\Unit\Model\Data;
 
-use Ferreira\LoginByTaxvat\Model\Data\Customer;
+use RCFerreira\LoginByTaxvat\Model\Data\Customer;
 use Magento\Customer\Api\CustomerRepositoryInterface;
 use Magento\Framework\Api\SearchCriteria;
 use Magento\Framework\Api\SearchCriteriaBuilder;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Test\Unit\Plugin\Magento\Customer\Controller\Account;
+namespace RCFerreira\LoginByTaxvat\Test\Unit\Plugin\Magento\Customer\Controller\Account;
 
-use Ferreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Account\LoginPostPlugin;
+use RCFerreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Account\LoginPostPlugin;
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 use Magento\Customer\Controller\Account\LoginPost;
 
@@ -16,7 +16,7 @@ class LoginPostPluginTest extends \PHPUnit\Framework\TestCase
     protected $objectManager;
 
     /**
-     * @var (\Ferreira\LoginByTaxvat\Model\Data\Customer&\PHPUnit\Framework\MockObject\MockObject)|\PHPUnit\Framework\MockObject\MockObject
+     * @var (\RCFerreira\LoginByTaxvat\Model\Data\Customer&\PHPUnit\Framework\MockObject\MockObject)|\PHPUnit\Framework\MockObject\MockObject
      */
     protected $customerMock;
 
@@ -45,7 +45,7 @@ class LoginPostPluginTest extends \PHPUnit\Framework\TestCase
      */
     public function setUp(): void
     {
-        $this->customerMock = $this->getMockBuilder(\Ferreira\LoginByTaxvat\Model\Data\Customer::class)
+        $this->customerMock = $this->getMockBuilder(\RCFerreira\LoginByTaxvat\Model\Data\Customer::class)
             ->disableOriginalConstructor()
             ->getMock();
 
