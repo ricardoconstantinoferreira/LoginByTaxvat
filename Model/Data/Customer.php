@@ -32,7 +32,12 @@ class Customer
             ->create();
 
         $result = $this->customerRepository->getList($searchCriteria);
-        return $result->getItems();
+
+        if (!empty($result)) {
+            return $result->getItems();
+        }
+
+        return [];
     }
 
 }
