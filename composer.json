@@ -1,17 +1,19 @@
 {
-  "name": "rcferreira/module-login-by-taxvat",
-  "version": "1.0.4",
-  "description": "N/A",
-  "type": "magento2-module",
-  "require": {
-    "magento/framework": "*"
-  },
-  "autoload": {
-    "files": [
-      "registration.php"
-    ],
-    "psr-4": {
-      "RCFerreira\\LoginByTaxvat\\": ""
+    "name": "rcferreira/module-login-by-taxvat",
+    "version": "1.0.5",
+    "description": "N/A",
+    "type": "magento2-module",
+    "homepage": "https://github.com/ricardoconstantinoferreira/LoginByTaxvat",
+    "license": [],
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "RCFerreira\\LoginByTaxvat\\": ""
+        }
     }
-  }
 }
