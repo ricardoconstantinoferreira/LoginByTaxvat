@@ -34,10 +34,11 @@ class LoginPlugin
     ) {
         $content = $this->json->unserialize($subject->getRequest()->getContent());
 
-        if (isset($content['username']) && $this->validatorEmail->validaEmail($content['username'])) {
+        if (isset($content['username']) && !$this->validatorEmail->validaEmail($content['username'])) {
             $customerData = $this->customer->getCustomerDataByTaxvat($content['username']);
-            if (!empty($customerData)) {
-                $content['username'] = $customerData['email'];
+            $email = current($customerData)->getEmail();
+            if (!empty($email)) {
+                $content['username'] = $email;
                 $subject->getRequest()->setContent(
                     $this->json->serialize($content)
                 );
