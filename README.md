@@ -1,31 +1,18 @@
-The README.md file content is generated automatically, see [Magento module README.md](https://github.com/magento/devdocs/wiki/Magento-module-README.md) for more information.
-
 # RCFerreira_LoginByTaxvat module
 
 
+## Descrição
 
-## Installation details
+Módulo usado para o customer realizar o login com o seu CPF
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+## Instalação
 
-## Extensibility
+<b>composer require rcferreira/module-login-by-taxvat</b><br/>
+<b>php bin/magento setup:upgrade</b>
 
-Extension developers can interact with the RCFerreira_LoginByTaxvat module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the RCFerreira_LoginByTaxvat module.
+## Login por CPF funciona na página de Login
+![Captura de Tela 2024-06-06 às 15.51.50.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fs1%2Fjn940qwj31gdn3p79zqx5_dm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_q5P3UT%2FCaptura%20de%20Tela%202024-06-06%20%C3%A0s%2015.51.50.png)
 
-### Layouts
-
-The module introduces layout handles in the `view/adminhtml/layout` directory.
-
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
-
-### UI components
-
-You can extend product and category updates using the UI components located in the `view/adminhtml/ui_component` directory.
-
-For information about a UI component in Magento 2, see [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
-
-## Additional information
-
-For information about significant changes in patch releases, see [Release information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html).
+## Login por CPF funciona na página do carrinho
+![Captura de Tela 2024-06-06 às 15.53.40.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fs1%2Fjn940qwj31gdn3p79zqx5_dm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_VvQaeD%2FCaptura%20de%20Tela%202024-06-06%20%C3%A0s%2015.53.40.png)
