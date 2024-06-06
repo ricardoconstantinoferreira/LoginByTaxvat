@@ -1,10 +1,20 @@
 {
     "name": "rcferreira/module-login-by-taxvat",
-    "version": "1.0.5",
-    "description": "N/A",
+    "version": "1.0.6",
+    "description": "Login by Taxvat (CPF in brazil)",
+    "authors": [
+        {
+            "name": "Ricardo Constantino Ferreira",
+            "email": "ricardoconstantino30@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "type": "magento2-module",
     "homepage": "https://github.com/ricardoconstantinoferreira/LoginByTaxvat",
-    "license": [],
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "require": {
         "magento/framework": "*"
     },
