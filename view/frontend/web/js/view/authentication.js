@@ -10,7 +10,8 @@ define([
     'Magento_Customer/js/model/customer',
     'mage/validation',
     'Magento_Checkout/js/model/authentication-messages',
-    'Magento_Checkout/js/model/full-screen-loader'
+    'Magento_Checkout/js/model/full-screen-loader',
+    'jquery/mask'
 ], function ($, Component, loginAction, customer, validation, messageContainer, fullScreenLoader) {
     'use strict';
 
@@ -33,6 +34,17 @@ define([
          */
         isActive: function () {
             return !customer.isLoggedIn();
+        },
+
+        behavior: function(e) {
+            let username = $('input[name$="username"]').val();
+            let number = username.charAt(0);
+
+            if (!isNaN(number) && number != "") {
+                $('input[name$="username"]').mask('000.000.000-00');
+            } else {
+                $('input[name$="username"]').unmask();
+            }
         },
 
         /**

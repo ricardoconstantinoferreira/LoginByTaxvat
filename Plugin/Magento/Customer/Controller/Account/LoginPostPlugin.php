@@ -30,8 +30,11 @@ class LoginPostPlugin
 
         if (!empty($login['username'])) {
             $customerData = $this->customer->getCustomerDataByTaxvat($login['username']);
-            $login['username'] = $customerData['email'];
-            $subject->getRequest()->setPostValue('login', $login);
+            if (!empty($customerData)) {
+                $email = current($customerData)->getEmail();
+                $login['username'] = $email;
+                $subject->getRequest()->setPostValue('login', $login);
+            }
         }
     }
 }
