@@ -4,12 +4,12 @@
 
     <type name="Magento\Customer\Controller\Account\LoginPost">
         <plugin name="ferreira_login_by_taxvat"
-                type="Ferreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Account\LoginPostPlugin" />
+                type="RCFerreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Account\LoginPostPlugin" />
     </type>
 
     <type name="Magento\Customer\Controller\Ajax\Login">
         <plugin name="ferreira_login_by_taxvat_checkout"
-                type="Ferreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Ajax\LoginPlugin" />
+                type="RCFerreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Ajax\LoginPlugin" />
     </type>
 
 </config>

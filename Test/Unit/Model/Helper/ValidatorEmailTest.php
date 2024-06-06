@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Test\Unit\Model\Helper;
+namespace RCFerreira\LoginByTaxvat\Test\Unit\Model\Helper;
 
-use Ferreira\LoginByTaxvat\Model\Helper\ValidatorEmail;
+use RCFerreira\LoginByTaxvat\Model\Helper\ValidatorEmail;
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 
 class ValidatorEmailTest extends \PHPUnit\Framework\TestCase

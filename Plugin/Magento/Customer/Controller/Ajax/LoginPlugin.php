@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Ajax;
+namespace RCFerreira\LoginByTaxvat\Plugin\Magento\Customer\Controller\Ajax;
 
 use Magento\Customer\Controller\Ajax\Login;
 use Magento\Framework\Serialize\Serializer\Json;
-use Ferreira\LoginByTaxvat\Model\Helper\ValidatorEmail;
-use Ferreira\LoginByTaxvat\Model\Data\Customer;
+use RCFerreira\LoginByTaxvat\Model\Helper\ValidatorEmail;
+use RCFerreira\LoginByTaxvat\Model\Data\Customer;
 
 class LoginPlugin
 {

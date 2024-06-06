@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ferreira\LoginByTaxvat\Model\Data;
+namespace RCFerreira\LoginByTaxvat\Model\Data;
 
 use Magento\Customer\Api\CustomerRepositoryInterface;
 use Magento\Framework\Api\SearchCriteriaBuilder;
